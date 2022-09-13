@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <ul class="menu">
+            <li><a href="#" id="profile1">Profile</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#" id="profile2">My Profile</a></li>
+            <li><a href="#">Find Connections</a></li>
+        </ul>
+        <button class="btn">Sign Out</button>
+    </div>
+    <div class="contenedor">
+        <div class="contenedor-izq">
+            <div class="card">
+                <div class="card-header">
+                    <img src="images/jane-m.jpg" alt="Imagen de Usuario" class="imagen-usuario">
+                </div>
+                <div class="card-body">
+                    <h1>Jane Doe</h1>
+                    <h3><img src="images/map-marker.png" alt="map-marker" class="icono1">Seattle</h3>
+                    <p>Developer | Engineer | Problem Solver <br>
+                    Master of shadows and the Internet!</p>
+                    <p>
+                        <a href="#" onclick="cambio_nombre()">
+                            <img src="images/gear.png" alt="engrane" class="icono1">edit profile</a>
+                    </p>
+                </div>
+            </div>
+            <div class="educacion">
+                <div class="educacion-header">
+                    <h4 class="educacion-titulo">Education</h4>
+                </div>
+                <div class="educacion-contenido">
+                    <h3>Coding Dojo - Full Stack Bootcamp</h3>
+                    <p id="date">Dec 2019 - Mar 2020</p>
+                    <p>Triple Black belt in python, MERN and C#...</p>
+                </div>
+            </div>
+        </div>
+        <div class="contenedor-der">
+            <div class="requests">
+                <div class="requests-header">
+                    <p class="request-number">2</p>
+                    <h4>Connection Request</h4>
+                </div>
+                <div class="request-body">
+                    <div class="imagenYnombre" id="Todd">
+                        <img src="images/todd-s.jpg" alt="Todd-E" class="foto-usuario">
+                        <p><strong>Todd E</strong></p>
+                    </div>
+                    <div class="iconos" id="Todd" onclick="eliminar_usuario1()">
+                        <img src="images/accept-circle.png" alt="Accept-circle" class="icono2" onclick="more_connections()">
+                        <img src="images/close-circle.png" alt="Close-circle" class="icono2">
+                    </div>
+                    <div class="imagenYnombre" id="Phil">
+                        <img src="images/phil-s.jpg" alt="Phil-K" class="foto-usuario">
+                        <p><strong>Phil K</strong></p>
+                    </div>
+                    <div class="iconos" id="Phil" onclick="eliminar_usuario2()">
+                        <img src="images/accept-circle.png" alt="Accept-circle" class="icono2" onclick="more_connections()">
+                        <img src="images/close-circle.png" alt="Close-circle" class="icono2">
+                    </div>
+                </div>
+            </div>
+            <div class="connections">
+                <div class="connections-header">
+                    <p class="connections-number" onclick="connections()">500</p>
+                    <h4>Your Connections</h4>
+                </div>
+                <div class="connections-body">
+                    <div class="imagenYnombre">
+                        <img src="images/adrien-s.jpg" alt="Adrien-D" class="foto-usuario">
+                        <p><strong>Adrien D</strong></p>
+                    </div>
+                    <div class="imagenYnombre">
+                        <img src="images/anne-s.jpg" alt="Anne-J" class="foto-usuario">
+                        <p><strong>Anne J</strong></p>
+                    </div>
+                    <div class="imagenYnombre">
+                        <img src="images/alayne-s.jpg" alt="Alayne-T" class="foto-usuario">
+                        <p><strong>Alayne T</strong></p>
+                    </div>
+                    <div class="imagenYnombre">
+                        <img src="images/arry-s.jpg" alt="Arry-Y" class="foto-usuario">
+                        <p><strong>Arry Y</strong></p>
+                    </div>
+                </div>
+                <div class="view-more">
+                    <p>
+                        <a href="#">View More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
